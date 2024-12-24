@@ -1,0 +1,28 @@
+
+// export const createTodo = async () => {
+//   try {
+//     console.log("Connecting to the database...");
+//     await client.connect();
+
+//     console.log("Successfully connected to the database");
+
+//     const response = await client.query(`
+//       CREATE TABLE IF NOT EXISTS todos (
+//         id SERIAL PRIMARY KEY,
+//         task VARCHAR(255) NOT NULL,
+//         status BOOLEAN NOT NULL
+//       );
+//     `);
+//     console.log("Todo Table Created Successfully:", response.command);
+//   } catch (error) {
+//     console.log("Error creating Todo Table:", error.message);
+//   } finally {
+//     console.log("Closing database connection...");
+//     await client.end();
+//     console.log("Database connection closed");
+//   }
+// };
+
+// createTodo().catch((err) => {
+//   console.error("Unexpected error in createTodo:", err.message);
+// });
